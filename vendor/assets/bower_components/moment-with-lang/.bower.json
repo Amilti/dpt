@@ -1,0 +1,14 @@
+{
+  "name": "momentjs-lang",
+  "version": "2.1.0",
+  "homepage": "https://github.com/atizo/bower-momentjs-lang",
+  "_release": "2.1.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "2.1.0",
+    "commit": "7158b19487efbfa3bf837c58e80f07c8986f739f"
+  },
+  "_source": "https://github.com/atizo/bower-momentjs-lang.git",
+  "_target": "*",
+  "_originalSource": "https://github.com/atizo/bower-momentjs-lang.git"
+}

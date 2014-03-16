@@ -1,0 +1,10 @@
+<table ng-show="!switchStat" class="classique ">
+	<tr>
+		<th class="rang">Rang</th>
+		<th>Total</th>
+	</tr>
+	<tr ng-repeat="classement in classements | orderBy: '-total'" class="list-classement">
+		<td class="rang"><h1>{{$index +1}}. </h1> {{classement.user.user_name}}</td>
+		<td animate-on-change="classement" class="score">{{classement.total}}</td>
+	</tr>
+</table>

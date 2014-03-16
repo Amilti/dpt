@@ -1,0 +1,90 @@
+
+<div ng-controller="scoresCtrl" class="contentScore">
+	<div carousel="stats" class="content-carrousel">
+		<div  data-num="{{$index + 1}}" ng-repeat="stat in stats | orderBy: '-moyenne' " class="item item-{{$index + 1}}">
+			<div class="info">
+				{{$index + 1}}. {{stat.user}} moyenne: {{stat.moyenne}} nombre de parties: {{stat.nbParty}}
+			</div>
+
+			<img ng-src="{{stat.specialisation_url}}">
+		</div>
+	</div>
+
+	<!--<div class="voting-content" ng-show="vote.displayVoting">
+		<h2>Vote</h2>
+		<div ng-class="user.vote" ng-repeat="user in users" class="item-choix">
+			{{user.user_name}}
+			<div ng-show="isCurrentUser(user)" class="choix" ng-click="voting(user)">Cliquez pour voter</div>
+		</div>
+	</div>-->
+
+	<!--<div ng-show="vote.show" class="content-form-score">
+		<form name="voteForm">
+			<h1>{{vote.user.user_name}} : </h1>
+			<h1>{{vote.kills}}</h1>
+			<h1>{{vote.assists}}</h1>
+			<h1>{{vote.deaths}}</h1>
+			<input type="text" ng-model="vote.ks" placeholder="KS Estimé">
+			<button ng-click="displayVote(voteForm, vote)" ng-disabled="voteForm.$invalid" type="submit" class="btn btn-primary">Voter</button>
+		</form>
+	</div>-->
+
+	<div class="switch-classement">
+		Switch
+		<br/><form name="statForm"><input type="checkbox" ng-model="switchStat"></form>
+	</div>
+	<div id="list-score">
+		<table>
+			<tr>
+				<th>Pseudo</th>
+				<th>Personnage</th>
+				<th>Kill</th>
+				<th>Assist</th>
+				<th>Deaths</th>
+			</tr>
+			<tr  ng-repeat="score in scores | orderBy: '-date' | limitTo: '10'" class="list-score">
+				<td>{{score.user.user_name}}</td>
+				<td>{{score.specialisation.name}}</td>
+				<td >{{score.kills}}</td>
+				<td >{{score.assists}}</td>
+				<td >{{score.deaths}}</td>
+			</tr>
+		</table>
+	</div>
+
+	<div id="best-player">
+		<ul active-classement class="active" ng-click="filterClassement('week')"><li>Semaine</li></ul>
+		<ul active-classement ng-click="filterClassement('month')"><li>Mois</li></ul>
+		<ul active-classement ng-click="filterClassement('all')"><li>All</li></ul>
+			<%= render partial: "scores/partials/classement" %>
+			<%= render partial: "scores/partials/classement_total" %>
+	</div>
+	<div class="bandeau" ng-switch on="enableSpec">
+		<p ng-switch-when="false">Choisis un personnage</p>
+		<a  ng-click="displaySpec()" ng-switch-when="true" href="">Retour</a>
+	</div>
+	<div class="list-characters">
+		<img ng-repeat="character in characters | orderBy: 'name' | filter:filterName" 
+			class="repeat-animation" 
+			ng-src= "{{character.avatar}}"
+			ng-click="displaySpec(character)">
+		<ul class="specialisation" ng-show="enableSpec">
+			<li active ng-repeat="specialisation in specialisations | filter:filterSpec" 
+				class="animation-spec"
+				ng-class="specialisation.character | lowercase"
+				ng-click="displayForm(specialisation)" >
+
+					<a href="">{{specialisation.name}}</a>
+			</li>
+		</ul>
+	</div>
+	<div ng-show="enableForm" class="formScore">
+		Ajouter un kill
+		<form name="score" action="">
+			<input check-number max="8"  required ng-model="scoreForm.kills" type="number" name="kills" placeholder="Kills" autocomplete="off">
+			<input check-number max="8"required ng-model="scoreForm.assists" type="number" name="assists" placeholder="assists" autocomplete="off">
+			<input check-number max="7" required ng-model="scoreForm.deaths" type="number" name="deaths" placeholder="deaths" autocomplete="off"><br/>
+			<button ng-click="addScore(scoreForm, score)" ng-disabled="scoreForm.$invalid" type="submit" class="btn btn-primary">Ajouter</button>
+		</form>
+	</div>
+</div>

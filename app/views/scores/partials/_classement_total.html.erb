@@ -1,0 +1,16 @@
+<table ng-show="switchStat" class="total ">
+	<tr class="total-tr">
+		<th class="rang">Rang</th>
+		<th>Kills</th>
+		<th>Assists</th>
+		<th>Deaths</th>
+		<th>Total</th>
+	</tr>
+	<tr ng-repeat="classement in classements | orderBy: '-total'" class="list-classement">
+		<td style="text-align: left;">{{$index +1}}. {{classement.user.user_name}}</td>
+		<td>{{classement.totalKill}}</td>
+		<td>{{classement.totalAssist}}</td>
+		<td>{{classement.totalDeath}}</td>
+		<td>{{classement.total}}</td>
+	</tr>
+</table>

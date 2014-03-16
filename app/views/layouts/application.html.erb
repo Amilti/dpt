@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dptea</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <% if Rails.env.production? %>
+  	<script src="http://dpt-socket.herokuapp.com/socket.io/socket.io.js"></script>
+  	<% else %>
+  	<script src="http://localhost:1337/socket.io/socket.io.js"></script>
+  <% end %>
+  <%= csrf_meta_tags %>
+</head>
+<body ng-app="App">
+<div class="logo-ara">
+</div>
+<div class="logo-elsword">
+</div>
+<div class="logo">
+</div>
+<%= yield %>
+</body>
+</html>

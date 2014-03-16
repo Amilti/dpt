@@ -1,0 +1,18 @@
+{
+  "name": "app",
+  "lib": {
+    "name": "bower-rails generated lib assets",
+    "dependencies": {
+    }
+  },
+  "vendor": {
+    "name": "bower-rails generated vendor assets",
+    "dependencies": {
+      "angular": "https://github.com/angular/bower-angular.git",
+      "angular-animate": "https://github.com/angular/bower-angular-animate.git",
+      "underscore": "https://github.com/components/underscore.git",
+      "moment": "https://github.com/moment/moment.git",
+      "moment-with-lang": "https://github.com/atizo/bower-momentjs-lang.git"
+    }
+  }
+}

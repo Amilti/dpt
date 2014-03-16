@@ -1,0 +1,720 @@
+/* line 3, scss/style.scss */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial Black', Arial, sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-variant: normal;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* line 14, scss/style.scss */
+.content-login {
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 200px;
+  -webkit-box-shadow: grey 2px 2px 10px;
+  -moz-box-shadow: grey 2px 2px 10px;
+  box-shadow: grey 2px 2px 10px;
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+}
+/* line 22, scss/style.scss */
+.content-login h2 {
+  padding: 0;
+  margin: 0;
+}
+/* line 27, scss/style.scss */
+.content-login .text input {
+  width: 300px;
+  height: 40px;
+  margin: 5px;
+  font-size: 16px;
+}
+/* line 34, scss/style.scss */
+.content-login .button input {
+  background: url(/assets/buttons.png);
+  background-position: 0 -129px;
+  width: 185px;
+  height: 50px;
+  border: none;
+  color: white;
+  line-height: 40px;
+  cursor: pointer;
+  font-size: 16px;
+  padding-top: 5px;
+}
+
+/* line 48, scss/style.scss */
+.logo-ara {
+  background-image: url(/assets/Ara_Jechun.png);
+  width: 607px;
+  height: 990px;
+  position: absolute;
+  left: -80px;
+  z-index: -1;
+  top: 150px;
+}
+
+/* line 58, scss/style.scss */
+.logo-elsword {
+  background-image: url(/assets/elsword_new.png);
+  width: 785px;
+  height: 829px;
+  position: absolute;
+  right: -350px;
+  top: 200px;
+}
+
+/* line 68, scss/style.scss */
+.logo {
+  background-image: url(/assets/logo.png);
+  width: 308px;
+  height: 202px;
+  bottom: 0;
+  position: absolute;
+  left: 50%;
+  margin-left: -150px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -10;
+}
+
+/* line 81, scss/style.scss */
+.content-carrousel {
+  width: 980px;
+  height: 200px;
+  margin: 0 auto;
+  border: 1px solid black;
+  color: black;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: grey 2px 2px 10px;
+  -moz-box-shadow: grey 2px 2px 10px;
+  box-shadow: grey 2px 2px 10px;
+}
+/* line 90, scss/style.scss */
+.content-carrousel .item {
+  width: 980px;
+  height: 200px;
+  overflow: hidden;
+  position: absolute;
+  display: none;
+}
+/* line 96, scss/style.scss */
+.content-carrousel .item img {
+  width: 100%;
+}
+/* line 100, scss/style.scss */
+.content-carrousel .item .info {
+  color: black;
+  position: absolute;
+  width: 100%;
+  background: white;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+}
+
+/* line 110, scss/style.scss */
+.bandeau {
+  background: url(/assets/login.gif);
+  width: 450px;
+  height: 60px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  font-weight: 900;
+  height: 42px;
+  line-height: 38px;
+}
+/* line 121, scss/style.scss */
+.bandeau p {
+  padding: 0;
+  margin: 0;
+}
+/* line 126, scss/style.scss */
+.bandeau a {
+  text-decoration: none;
+  color: black;
+}
+
+/* line 132, scss/style.scss */
+.list-characters {
+  -webkit-box-shadow: grey 2px 2px 10px;
+  -moz-box-shadow: grey 2px 2px 10px;
+  box-shadow: grey 2px 2px 10px;
+  width: 410px;
+  min-height: 80px;
+  margin: 0 auto;
+  margin-top: 2px;
+  overflow: hidden;
+  background-color: white;
+}
+/* line 140, scss/style.scss */
+.list-characters img {
+  width: 82px;
+  padding: 10px;
+  cursor: pointer;
+  float: left;
+}
+/* line 147, scss/style.scss */
+.list-characters ul.specialisation {
+  float: left;
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+  width: 70%;
+}
+/* line 153, scss/style.scss */
+.list-characters ul.specialisation li {
+  height: 25px;
+  list-style: none;
+  margin-bottom: 5px;
+  line-height: 25px;
+  padding-left: 5px;
+  cursor: pointer;
+  font-size: 13px;
+  text-decoration: none;
+}
+/* line 162, scss/style.scss */
+.list-characters ul.specialisation li a {
+  text-decoration: none;
+  color: black;
+}
+/* line 168, scss/style.scss */
+.list-characters ul.specialisation li.active {
+  -webkit-box-shadow: grey 1px 1px 10px;
+  -moz-box-shadow: grey 1px 1px 10px;
+  box-shadow: grey 1px 1px 10px;
+}
+/* line 172, scss/style.scss */
+.list-characters ul.specialisation li.ara.active, .list-characters ul.specialisation li.ara:hover {
+  background-color: #F09802;
+  border-color: #A75D18;
+}
+/* line 177, scss/style.scss */
+.list-characters ul.specialisation li.aisha.active, .list-characters ul.specialisation li.aisha:hover {
+  background-color: #BA70C6;
+  border-color: #53396A;
+}
+/* line 181, scss/style.scss */
+.list-characters ul.specialisation li.chung.active, .list-characters ul.specialisation li.chung:hover {
+  background-color: #168DC8;
+  border-color: #52A09B;
+}
+/* line 186, scss/style.scss */
+.list-characters ul.specialisation li.elsword.active, .list-characters ul.specialisation li.elsword:hover {
+  background-color: #C13644;
+  border-color: #6F342F;
+}
+/* line 191, scss/style.scss */
+.list-characters ul.specialisation li.eve.active, .list-characters ul.specialisation li.eve:hover {
+  background-color: #F89ABF;
+}
+/* line 195, scss/style.scss */
+.list-characters ul.specialisation li.raven.active, .list-characters ul.specialisation li.raven:hover {
+  background-color: #736C51;
+  border-color: #F5F4E9;
+}
+/* line 200, scss/style.scss */
+.list-characters ul.specialisation li.rena.active, .list-characters ul.specialisation li.rena:hover {
+  background-color: #75CE17;
+  border-color: #655E27;
+}
+/* line 204, scss/style.scss */
+.list-characters ul.specialisation li.ara:hover {
+  -webkit-box-shadow: grey 1px 1px 10px;
+  -moz-box-shadow: grey 1px 1px 10px;
+  box-shadow: grey 1px 1px 10px;
+}
+/* line 205, scss/style.scss */
+.list-characters ul.specialisation li.aisha:hover {
+  -webkit-box-shadow: grey 1px 1px 10px;
+  -moz-box-shadow: grey 1px 1px 10px;
+  box-shadow: grey 1px 1px 10px;
+}
+/* line 206, scss/style.scss */
+.list-characters ul.specialisation li.chung:hover {
+  -webkit-box-shadow: grey 1px 1px 10px;
+  -moz-box-shadow: grey 1px 1px 10px;
+  box-shadow: grey 1px 1px 10px;
+}
+/* line 207, scss/style.scss */
+.list-characters ul.specialisation li.elsword:hover {
+  -webkit-box-shadow: grey 1px 1px 10px;
+  -moz-box-shadow: grey 1px 1px 10px;
+  box-shadow: grey 1px 1px 10px;
+}
+/* line 208, scss/style.scss */
+.list-characters ul.specialisation li.eve:hover {
+  -webkit-box-shadow: grey 1px 1px 10px;
+  -moz-box-shadow: grey 1px 1px 10px;
+  box-shadow: grey 1px 1px 10px;
+}
+/* line 209, scss/style.scss */
+.list-characters ul.specialisation li.raven:hover {
+  -webkit-box-shadow: grey 1px 1px 10px;
+  -moz-box-shadow: grey 1px 1px 10px;
+  box-shadow: grey 1px 1px 10px;
+}
+/* line 210, scss/style.scss */
+.list-characters ul.specialisation li.rena:hover {
+  -webkit-box-shadow: grey 1px 1px 10px;
+  -moz-box-shadow: grey 1px 1px 10px;
+  box-shadow: grey 1px 1px 10px;
+}
+
+/* line 216, scss/style.scss */
+.formScore {
+  background-color: white;
+  width: 450px;
+  margin: 0 auto;
+  -webkit-box-shadow: grey 2px 2px 10px;
+  -moz-box-shadow: grey 2px 2px 10px;
+  box-shadow: grey 2px 2px 10px;
+  margin-top: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+/* line 225, scss/style.scss */
+.header {
+  background: url(/assets/login.gif);
+  width: 445px;
+  height: 55px;
+  text-align: center;
+  font-family: 'Arial Black', Arial, sans-serif;
+  line-height: 50px;
+}
+
+/* line 239, scss/style.scss */
+.repeat-animation.ng-enter, .repeat-animation.ng-leave {
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+/* line 251, scss/style.scss */
+.repeat-animation.ng-enter {
+  -webkit-animation-name: bounceIn;
+  -moz-animation-name: bounceIn;
+  -ms-animation-name: bounceIn;
+  animation-name: bounceIn;
+}
+
+/* line 258, scss/style.scss */
+.repeat-animation.ng-leave {
+  -webkit-animation-name: bounceOut;
+  -moz-animation-name: bounceOut;
+  -ms-animation-name: bounceOut;
+  animation-name: bounceOut;
+}
+
+/* line 266, scss/style.scss */
+.animation-spec.ng-enter {
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -ms-animation-delay: 1s;
+  animation-delay: 1s;
+  -webkit-animation-name: slideInRight;
+  -moz-animation-name: slideInRight;
+  -ms-animation-name: slideInRight;
+  animation-name: slideInRight;
+}
+
+/* line 288, scss/style.scss */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0;
+  /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+/* line 293, scss/style.scss */
+.formScore {
+  overflow: hidden;
+}
+/* line 295, scss/style.scss */
+.formScore input {
+  width: 80px;
+  height: 50px;
+  margin: 20px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+/* line 303, scss/style.scss */
+.formScore button {
+  background: url(/assets/buttons.png);
+  background-position: 0 -129px;
+  width: 185px;
+  height: 50px;
+  display: block;
+  border: none;
+  color: white;
+  font-family: 'Arial Black', Arial, sans-serif;
+  font-size: 13px;
+  float: right;
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+/* line 319, scss/style.scss */
+#list-score, #best-player {
+  position: absolute;
+  background-color: white;
+  right: 0;
+  width: 300px;
+  margin-right: 20px;
+  margin-top: 95px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-timing-function: ease-in;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+  font-weight: normal;
+  font-family: Arial;
+  -webkit-box-shadow: grey 2px 2px 10px;
+  -moz-box-shadow: grey 2px 2px 10px;
+  box-shadow: grey 2px 2px 10px;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -ms-animation-delay: 1s;
+  animation-delay: 1s;
+  -webkit-animation-name: slideInRight;
+  -moz-animation-name: slideInRight;
+  -ms-animation-name: slideInRight;
+  animation-name: slideInRight;
+}
+/* line 350, scss/style.scss */
+#list-score .list-score.ng-enter, #best-player .list-score.ng-enter, #list-score .list-score.ng-leave, #best-player .list-score.ng-leave {
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: slideInDown;
+  -moz-animation-name: slideInDown;
+  -ms-animation-name: slideInDown;
+  animation-name: slideInDown;
+}
+/* line 368, scss/style.scss */
+#list-score .list-score.ng-leave, #best-player .list-score.ng-leave {
+  -webkit-animation-name: rollOut;
+  -moz-animation-name: rollOut;
+  -ms-animation-name: rollOut;
+  animation-name: rollOut;
+}
+/* line 376, scss/style.scss */
+#list-score ul, #best-player ul {
+  margin: 0;
+  padding: 0;
+}
+/* line 379, scss/style.scss */
+#list-score ul li, #best-player ul li {
+  list-style: none;
+}
+/* line 383, scss/style.scss */
+#list-score table, #best-player table {
+  width: 100%;
+  text-align: center;
+}
+/* line 387, scss/style.scss */
+#list-score table tr, #best-player table tr {
+  cursor: pointer;
+}
+/* line 391, scss/style.scss */
+#list-score table td, #best-player table td {
+  font-weight: normal;
+  font-size: 14px;
+}
+
+/* line 398, scss/style.scss */
+#best-player {
+  right: none;
+  left: 0;
+  margin-right: 0;
+  margin-left: 20px;
+  -webkit-animation-name: slideInLeft;
+  -moz-animation-name: slideInLeft;
+  -ms-animation-name: slideInLeft;
+  animation-name: slideInLeft;
+  padding: 5px;
+}
+/* line 410, scss/style.scss */
+#best-player .list-classement.ng-enter, #best-player .list-score.ng-leave, #best-player .list-classement.ng-leave {
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: rollIn;
+  -moz-animation-name: rollIn;
+  -ms-animation-name: rollIn;
+  animation-name: rollIn;
+}
+/* line 428, scss/style.scss */
+#best-player .list-classement.ng-leave {
+  -webkit-animation-name: rollOut;
+  -moz-animation-name: rollOut;
+  -ms-animation-name: rollOut;
+  animation-name: rollOut;
+}
+/* line 434, scss/style.scss */
+#best-player .list-score.ng-leave {
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: rollOut;
+  -moz-animation-name: rollOut;
+  -ms-animation-name: rollOut;
+  animation-name: rollOut;
+}
+/* line 452, scss/style.scss */
+#best-player table.classique {
+  border-collapse: collapse;
+}
+/* line 454, scss/style.scss */
+#best-player table.classique th {
+  border-bottom: 1px solid black;
+  padding: 10px;
+  padding-right: 30px;
+  text-align: right;
+}
+/* line 462, scss/style.scss */
+#best-player table.classique td {
+  text-align: right;
+  padding: 10px;
+  padding-right: 30px;
+  font-weight: bold;
+}
+/* line 469, scss/style.scss */
+#best-player table.classique td.rang {
+  text-align: left;
+}
+/* line 472, scss/style.scss */
+#best-player table.classique td.rang h1 {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+/* line 479, scss/style.scss */
+#best-player table.classique td.score {
+  line-height: 30px;
+}
+/* line 483, scss/style.scss */
+#best-player table.classique td.score.active {
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: rollIn;
+  -moz-animation-name: rollIn;
+  -ms-animation-name: rollIn;
+  animation-name: rollIn;
+}
+/* line 499, scss/style.scss */
+#best-player table.classique th.rang {
+  text-align: left;
+  padding-left: 30px;
+}
+/* line 505, scss/style.scss */
+#best-player ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+/* line 513, scss/style.scss */
+#best-player ul li {
+  margin: 0;
+  padding: 0;
+  float: left;
+  margin-left: 20px;
+  width: 70px;
+}
+/* line 520, scss/style.scss */
+#best-player ul:hover {
+  font-weight: bold;
+}
+/* line 524, scss/style.scss */
+#best-player ul.active {
+  font-weight: bold;
+}
+
+/* line 532, scss/style.scss */
+table.total th {
+  font-size: 14px;
+  padding-top: 15px;
+}
+
+/* line 539, scss/style.scss */
+.switch-classement {
+  position: absolute;
+  left: 20px;
+  top: 560px;
+  text-align: center;
+  font-size: 12px;
+  padding: 5px;
+  background-color: white;
+  -webkit-box-shadow: grey 2px 2px 10px;
+  -moz-box-shadow: grey 2px 2px 10px;
+  box-shadow: grey 2px 2px 10px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+}
+/* line 546, scss/style.scss */
+.switch-classement input {
+  margin: 0;
+  padding: 0;
+  display: block;
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+
+/* line 558, scss/style.scss */
+.content-form-score {
+  position: absolute;
+  right: 20px;
+  top: 250px;
+  width: 290px;
+  background: white;
+  padding: 5px;
+  -webkit-box-shadow: grey 2px 2px 10px;
+  -moz-box-shadow: grey 2px 2px 10px;
+  box-shadow: grey 2px 2px 10px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+}
+/* line 567, scss/style.scss */
+.content-form-score input {
+  width: 55px;
+  display: block;
+  float: left;
+  border: 1px solid black;
+  text-align: center;
+  margin-left: 20px;
+}
+/* line 576, scss/style.scss */
+.content-form-score button {
+  float: right;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+/* line 583, scss/style.scss */
+.content-form-score h1 {
+  float: left;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+/* line 592, scss/style.scss */
+.voting-content {
+  position: absolute;
+  width: 350px;
+  height: 500px;
+  background: white;
+  left: 50%;
+  top: 40px;
+  margin-left: -180px;
+  z-index: 3;
+  -webkit-box-shadow: grey 2px 2px 10px;
+  -moz-box-shadow: grey 2px 2px 10px;
+  box-shadow: grey 2px 2px 10px;
+}
+/* line 602, scss/style.scss */
+.voting-content h2 {
+  text-align: center;
+}
+/* line 605, scss/style.scss */
+.voting-content .item-choix {
+  -webkit-box-shadow: grey 2px 2px 10px;
+  -moz-box-shadow: grey 2px 2px 10px;
+  box-shadow: grey 2px 2px 10px;
+  margin-bottom: 15px;
+  height: 70px;
+  line-height: 67px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/* line 613, scss/style.scss */
+.voting-content .item-choix.no {
+  background: red;
+}
+/* line 617, scss/style.scss */
+.voting-content .item-choix.yes {
+  background: green;
+}
+/* line 621, scss/style.scss */
+.voting-content .choix {
+  float: right;
+  font-size: 12px;
+  color: grey;
+  cursor: pointer;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+  opacity: 0.3;
+}
+
+/* line 630, scss/style.scss */
+.change {
+  background-color: red;
+}
